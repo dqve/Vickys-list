@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great|Zilla+Slab:300,400");
+body {
+  background: #201C29;
+}
+
+.frame {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  width: 500px;
+  height: 700px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
+  background: #643A7A;
+  color: #497081;
+  font-family: 'zilla slab', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: .9rem;
+}
+
+.frame .prop {
+  position: absolute;
+  left: 20%;
+  font-family: 'zilla slab', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: .9rem;
+  color: #99529B;
+}
+
+.list {
+  position: absolute;
+  width: 450px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fff;
+  box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+.list .head {
+  padding: 20px 0;
+  margin: 0 30px;
+  border-bottom: 1px solid rgba(100, 58, 122, 0.5);
+}
+
+.list .title {
+  font-family: 'fredericka the great', cursive;
+  font-weight: 500;
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgba(100, 58, 122, 0.8);
+}
+
+.list .subtitle {
+  font-size: .9rem;
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+.list table {
+  list-style: none;
+  padding: 4px 4px;
+  margin: 0 30px;
+  font-weight: 300; 
+}
+
+.list table tr td {
+  position: relative;
+  display: block;
+  margin: 10px 10px;
+  height: 10px;
+}
+
+.list table tr .text {
+  float: left;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+table tr:nth-of-type(2) {
+  -webkit-animation: slide-up 1s;
+          animation: slide-up 1s;
+}
+
+table tr:nth-of-type(3) {
+  -webkit-animation: slide-up 1.5s;
+          animation: slide-up 1.5s;
+}
+
+table tr:nth-of-type(4) {
+  -webkit-animation: slide-up 2s;
+          animation: slide-up 2s;
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+  }
+}
+.list ul .button {
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  float: right;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(100, 58, 122, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.list ul .checkmark {
+  position: absolute;
+  stroke: rgba(100, 58, 122, 0.5);
+  fill: none;
+  stroke-dashoffset: 340;
+  stroke-dasharray: 360;
+}
+
+.list ul input {
+  display: none;
+}
+
+table tr .wrapper {
+  position: fixed;
+  width: 20px;
+  right: 0;
+
+}
+
+.list ul input:checked ~ .text {
+  color: rgba(100, 58, 122, 0.5);
+}
+.list ul input:checked ~ .wrapper .checkmark {
+  -webkit-animation: dash .5s ease-out forwards;
+          animation: dash .5s ease-out forwards;
+  opacity: 1;
+}
+.list ul input:checked ~ .button {
+  opacity: 0;
+}
+
+.checkmark {
+  display: block;
+  stroke-width: 8;
+  opacity: 0;
+}
+
+table tr .amount {
+  font-weight: 50;
+  font-size: 2rem;
+  color: rgba(93, 5, 98, 0.5);
+  text-align: right;
+  right:0;
+  padding-bottom: 10px;
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 340;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 340;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  text-align: left;
+}
+
+.list .button {
+  background-color: #f2f2f2;
+  background-image: linear-gradient(to bottom, #f2f2f2, #f2f2f2);
+  border: 1px solid #bfbfbf;
+  box-shadow: inset 0 1px 0 white, inset 0 -1px 0 #d9d9d9, inset 0 0 0 1px #f2f2f2, 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #8c8c8c;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 9px 16px 9px;
+  margin: 16px 0 0 16px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-left: 33%;
+  transition: all 20ms ease-out;
+  vertical-align: bottom;
+
+}
+.list .button:hover, .button:focus {
+  background: #f2f2f2;
+  border-color: #8c8c8c;
+  box-shadow: inset 0 1px 0 white, inset 0 -1px 0 #d9d9d9, inset 0 0 0 1px #f2f2f2;
+}
+.list .button:active {
+  background: #f2f2f2;
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.list .button .fa {
+  color: #bfbfbf;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.list .button-purple {
+  background-color: #847bba;
+  background-image: linear-gradient(to bottom, #847bba, #7568ba);
+  border: 1px solid #493e87;
+  box-shadow: inset 0 1px 0 #bab6d4, inset 0 -1px 0 #655aa1, inset 0 0 0 1px #948dba, 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.list .button-purple:hover, .button-purple:focus {
+  background: #7568ba;
+  border-color: #1f1654;
+  box-shadow: inset 0 1px 0 #bab6d4, inset 0 -1px 0 #655aa1, inset 0 0 0 1px #948dba;
+}
+.list .button-purple:active {
+  background: #7568ba;
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.list .button-purple .fa {
+  color: #493e87;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.list table tr td .cringe {
+  color: #2A012C;
+  padding-left: 25px;
+
+}
