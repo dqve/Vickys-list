@@ -1,6 +1,6 @@
 {
-  "name": "my-extension",
-  "version": "0.1.0",
+  "name": "Vicky's list",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
