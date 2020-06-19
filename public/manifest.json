@@ -6,6 +6,7 @@
   "background": {
     "scripts": ["app/background.js"]
   },
+  
   "browser_action": {},
   "content_scripts" : [
     {
