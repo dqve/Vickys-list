@@ -51,7 +51,7 @@ class App extends Component {
    <a href="" class="button button-purple" onclick="window.location.reload(true);">
     Click to <strong>Referesh</strong>
   </a><br/><br/>
-  <p class="prop">made with ❤ by David Ayo for Vicky Agoha</p>
+  <p class="prop">made with ❤ by David Ayo</p>
   </span>
   </div>
     );
